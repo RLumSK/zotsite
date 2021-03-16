@@ -1,0 +1,1133 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>zensols.zotsite package &mdash; Zotsite 0.3.5 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Contributing" href="../CONTRIBUTING.html" />
+    <link rel="prev" title="API Reference" href="../api.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../top.html" class="icon icon-home"> Zotsite
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doc/usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">zensols.zotsite package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zensols-zotsite-betterbib">zensols.zotsite.betterbib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zensols-zotsite-cli">zensols.zotsite.cli</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zensols-zotsite-config">zensols.zotsite.config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zensols-zotsite-db">zensols.zotsite.db</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zensols-zotsite-domain">zensols.zotsite.domain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zensols-zotsite-fscpvisitor">zensols.zotsite.fscpvisitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zensols-zotsite-itemmap">zensols.zotsite.itemmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zensols-zotsite-navvisitor">zensols.zotsite.navvisitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zensols-zotsite-prunevisitor">zensols.zotsite.prunevisitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zensols-zotsite-site">zensols.zotsite.site</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-zensols.zotsite">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../CONTRIBUTING.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../top.html">Zotsite</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../top.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../api.html">API Reference</a> &raquo;</li>
+        
+      <li>zensols.zotsite package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/api/zensols.zotsite.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="zensols-zotsite-package">
+<h1>zensols.zotsite package<a class="headerlink" href="#zensols-zotsite-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="zensols-zotsite-betterbib">
+<h2>zensols.zotsite.betterbib<a class="headerlink" href="#zensols-zotsite-betterbib" title="Permalink to this headline">¶</a></h2>
+<div class="graphviz"><img src="../_images/inheritance-31c430c05a3c95cdb855cb8c96a344aeb5287224.png" alt="Inheritance diagram of zensols.zotsite.betterbib" usemap="#inheritance99ba1d07d8" class="inheritance graphviz" /></div>
+<map id="inheritance99ba1d07d8" name="inheritance99ba1d07d8">
+<area shape="rect" id="node4" href="#zensols.zotsite.domain.Visitor" target="_top" title="Visitor" alt="" coords="35,79,107,104"/>
+<area shape="rect" id="node2" href="#zensols.zotsite.betterbib.BetterBibtexMapper" target="_top" title="Read the BetterBibtex database and create a mapping from item DB ids to" alt="" coords="131,5,269,31"/>
+<area shape="rect" id="node3" href="#zensols.zotsite.betterbib.BetterBibtexVisitor" target="_top" title="Use the ``BetterBibtexMapper`` to change the keys in mapped items to the" alt="" coords="5,152,136,177"/>
+</map><span class="target" id="module-zensols.zotsite.betterbib"></span><dl class="py class">
+<dt id="zensols.zotsite.betterbib.BetterBibtexMapper">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.betterbib.</code><code class="sig-name descname">BetterBibtexMapper</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lib</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/betterbib.html#BetterBibtexMapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.betterbib.BetterBibtexMapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Read the BetterBibtex database and create a mapping from item DB ids to
+citation keys.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.betterbib.BetterBibtexMapper.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lib</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/betterbib.html#BetterBibtexMapper.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.betterbib.BetterBibtexMapper.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.betterbib.BetterBibtexMapper.data">
+<em class="property">property </em><code class="sig-name descname">data</code><a class="headerlink" href="#zensols.zotsite.betterbib.BetterBibtexMapper.data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.betterbib.BetterBibtexMapper.mapping">
+<em class="property">property </em><code class="sig-name descname">mapping</code><a class="headerlink" href="#zensols.zotsite.betterbib.BetterBibtexMapper.mapping" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.betterbib.BetterBibtexMapper.tmp">
+<code class="sig-name descname">tmp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/betterbib.html#BetterBibtexMapper.tmp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.betterbib.BetterBibtexMapper.tmp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.betterbib.BetterBibtexVisitor">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.betterbib.</code><code class="sig-name descname">BetterBibtexVisitor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lib</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/betterbib.html#BetterBibtexVisitor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.betterbib.BetterBibtexVisitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.domain.Visitor" title="zensols.zotsite.domain.Visitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.domain.Visitor</span></code></a></p>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">BetterBibtexMapper</span></code> to change the keys in mapped items to the
+respective citation keys.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.betterbib.BetterBibtexVisitor.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lib</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/betterbib.html#BetterBibtexVisitor.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.betterbib.BetterBibtexVisitor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.betterbib.BetterBibtexVisitor.enter_parent">
+<code class="sig-name descname">enter_parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/betterbib.html#BetterBibtexVisitor.enter_parent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.betterbib.BetterBibtexVisitor.enter_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for traversing down/into a node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.betterbib.BetterBibtexVisitor.leave_parent">
+<code class="sig-name descname">leave_parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/betterbib.html#BetterBibtexVisitor.leave_parent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.betterbib.BetterBibtexVisitor.leave_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for traversing up/out of a node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.betterbib.BetterBibtexVisitor.visit_child">
+<code class="sig-name descname">visit_child</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">child</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/betterbib.html#BetterBibtexVisitor.visit_child"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.betterbib.BetterBibtexVisitor.visit_child" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for visiting a node.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="zensols-zotsite-cli">
+<h2>zensols.zotsite.cli<a class="headerlink" href="#zensols-zotsite-cli" title="Permalink to this headline">¶</a></h2>
+<div class="graphviz"><img src="../_images/inheritance-0b466d396bbfc046887ca7a1a007a6155452cc65.png" alt="Inheritance diagram of zensols.zotsite.cli" usemap="#inheritance4bd244d0cb" class="inheritance graphviz" /></div>
+<map id="inheritance4bd244d0cb" name="inheritance4bd244d0cb">
+<area shape="rect" id="node1" href="#zensols.zotsite.cli.ConfAppCommandLine" target="_top" title="ConfAppCommandLine" alt="" coords="34,299,191,324"/>
+<area shape="rect" id="node6" href="#zensols.zotsite.cli.SiteCli" target="_top" title="SiteCli" alt="" coords="194,5,266,31"/>
+</map><span class="target" id="module-zensols.zotsite.cli"></span><dl class="py class">
+<dt id="zensols.zotsite.cli.ConfAppCommandLine">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.cli.</code><code class="sig-name descname">ConfAppCommandLine</code><a class="reference internal" href="../_modules/zensols/zotsite/cli.html#ConfAppCommandLine"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.cli.ConfAppCommandLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://plandes.github.io/util/api/zensols.cli.html#zensols.cli.peraction.OneConfPerActionOptionsCliEnv" title="(in Zensols Utilities v1.4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.cli.peraction.OneConfPerActionOptionsCliEnv</span></code></a></p>
+<dl class="py method">
+<dt id="zensols.zotsite.cli.ConfAppCommandLine.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/cli.html#ConfAppCommandLine.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.cli.ConfAppCommandLine.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>opt_config</strong> – the option configuration (see project documentation)</p></li>
+<li><p><strong>config_env_name</strong> – the name of the environment variable that holds the resource like
+name (i.e. ~/.&lt;program name&gt;rc); this will be used as the
+configuration file if it is given and found; otherwise a
+<code class="docutils literal notranslate"><span class="pre">ValueError</span></code> is rasied if not found</p></li>
+<li><p><strong>no_os_environ</strong> – if <code class="docutils literal notranslate"><span class="pre">True</span></code> do not add environment variables to the configuration
+environment</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.cli.SiteCli">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.cli.</code><code class="sig-name descname">SiteCli</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/cli.html#SiteCli"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.cli.SiteCli" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="zensols.zotsite.cli.SiteCli.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/cli.html#SiteCli.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.cli.SiteCli.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.cli.SiteCli.export">
+<code class="sig-name descname">export</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/cli.html#SiteCli.export"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.cli.SiteCli.export" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.cli.SiteCli.print_structure">
+<code class="sig-name descname">print_structure</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/cli.html#SiteCli.print_structure"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.cli.SiteCli.print_structure" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="zensols.zotsite.cli.main">
+<code class="sig-prename descclassname">zensols.zotsite.cli.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/cli.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.cli.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="zensols-zotsite-config">
+<h2>zensols.zotsite.config<a class="headerlink" href="#zensols-zotsite-config" title="Permalink to this headline">¶</a></h2>
+<div class="graphviz"><img src="../_images/inheritance-a966c1ae01c9bccacd1eea6a5d3affde99543c5e.png" alt="Inheritance diagram of zensols.zotsite.config" usemap="#inheritance029347122a" class="inheritance graphviz" /></div>
+<map id="inheritance029347122a" name="inheritance029347122a">
+<area shape="rect" id="node2" href="#zensols.zotsite.config.AppConfig" target="_top" title="AppConfig" alt="" coords="69,445,151,471"/>
+</map><span class="target" id="module-zensols.zotsite.config"></span><p>Application configuration class.</p>
+<dl class="py class">
+<dt id="zensols.zotsite.config.AppConfig">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.config.</code><code class="sig-name descname">AppConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="n">remove_vars</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">env</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">env_sec</span><span class="o">=</span><span class="default_value">'env'</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/config.html#AppConfig"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.config.AppConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://plandes.github.io/util/api/zensols.config.html#zensols.config.iniconfig.ExtendedInterpolationEnvConfig" title="(in Zensols Utilities v1.4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.config.iniconfig.ExtendedInterpolationEnvConfig</span></code></a></p>
+<dl class="py method">
+<dt id="zensols.zotsite.config.AppConfig.data_dir">
+<em class="property">property </em><code class="sig-name descname">data_dir</code><a class="headerlink" href="#zensols.zotsite.config.AppConfig.data_dir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.config.AppConfig.from_args">
+<em class="property">classmethod </em><code class="sig-name descname">from_args</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">data_dir</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">out_dir</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">name_pat</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/config.html#AppConfig.from_args"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.config.AppConfig.from_args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.config.AppConfig.set_default">
+<code class="sig-name descname">set_default</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">clobber</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/config.html#AppConfig.set_default"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.config.AppConfig.set_default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="zensols-zotsite-db">
+<h2>zensols.zotsite.db<a class="headerlink" href="#zensols-zotsite-db" title="Permalink to this headline">¶</a></h2>
+<div class="graphviz"><img src="../_images/inheritance-68bd7aad107f04cd0d0c44c8996372fe72eecdec.png" alt="Inheritance diagram of zensols.zotsite.db" usemap="#inheritancec78be09e5e" class="inheritance graphviz" /></div>
+<map id="inheritancec78be09e5e" name="inheritancec78be09e5e">
+<area shape="rect" id="node1" href="#zensols.zotsite.db.DatabaseReader" target="_top" title="Database access to Zotero store." alt="" coords="5,5,125,31"/>
+</map><span class="target" id="module-zensols.zotsite.db"></span><dl class="py class">
+<dt id="zensols.zotsite.db.DatabaseReader">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.db.</code><code class="sig-name descname">DatabaseReader</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_dir</span></em>, <em class="sig-param"><span class="n">name_pat</span><span class="o">=</span><span class="default_value">'%'</span></em>, <em class="sig-param"><span class="n">library_id</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/db.html#DatabaseReader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.db.DatabaseReader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Database access to Zotero store.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.db.DatabaseReader.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_dir</span></em>, <em class="sig-param"><span class="n">name_pat</span><span class="o">=</span><span class="default_value">'%'</span></em>, <em class="sig-param"><span class="n">library_id</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/db.html#DatabaseReader.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.db.DatabaseReader.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>) – directory containing the Zotero DB files (sqlite and</p>
+</dd>
+</dl>
+<p>collections)
+:type name_pat: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>
+:param name_pat: the SQL pattern to match against subcollection names
+:type library_id: <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>
+:param library_id: the DB ide of the library to export</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.db.DatabaseReader.get_connection">
+<code class="sig-name descname">get_connection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/db.html#DatabaseReader.get_connection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.db.DatabaseReader.get_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a database connection the SQLite database.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.db.DatabaseReader.get_library">
+<code class="sig-name descname">get_library</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/db.html#DatabaseReader.get_library"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.db.DatabaseReader.get_library" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an object graph representing the data in the Zotero database.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="zensols-zotsite-domain">
+<h2>zensols.zotsite.domain<a class="headerlink" href="#zensols-zotsite-domain" title="Permalink to this headline">¶</a></h2>
+<div class="graphviz"><img src="../_images/inheritance-3fd4c730590e43e683337e39cef2412db4c23daa.png" alt="Inheritance diagram of zensols.zotsite.domain" usemap="#inheritancefd4cc1da5c" class="inheritance graphviz" /></div>
+<map id="inheritancefd4cc1da5c" name="inheritancefd4cc1da5c">
+<area shape="rect" id="node4" href="#zensols.zotsite.domain.ZoteroObject" target="_top" title="Represents any collection, item etc. Zotero data object." alt="" coords="191,79,289,104"/>
+<area shape="rect" id="node10" href="#zensols.zotsite.domain.Visitor" target="_top" title="Visitor" alt="" coords="359,79,431,104"/>
+<area shape="rect" id="node12" href="#zensols.zotsite.domain.Walker" target="_top" title="Walker" alt="" coords="476,79,548,104"/>
+<area shape="rect" id="node2" href="#zensols.zotsite.domain.Collection" target="_top" title="Represents a (sub)collection, which is a container for other collections and" alt="" coords="5,225,85,251"/>
+<area shape="rect" id="node3" href="#zensols.zotsite.domain.Container" target="_top" title="Container class holds items and sub&#45;collections." alt="" coords="55,152,134,177"/>
+<area shape="rect" id="node6" href="#zensols.zotsite.domain.Library" target="_top" title="Represents the top level object that contains the root level collections." alt="" coords="109,225,181,251"/>
+<area shape="rect" id="node5" href="#zensols.zotsite.domain.Item" target="_top" title="Represents an attachement object, like PDFs, site links etc." alt="" coords="159,152,231,177"/>
+<area shape="rect" id="node8" href="#zensols.zotsite.domain.Note" target="_top" title="Represents a note Zotero data object." alt="" coords="255,152,327,177"/>
+<area shape="rect" id="node7" href="#zensols.zotsite.domain.Name" target="_top" title="Name" alt="" coords="455,5,527,31"/>
+<area shape="rect" id="node9" href="#zensols.zotsite.domain.PrintVisitor" target="_top" title="PrintVisitor" alt="" coords="351,152,438,177"/>
+<area shape="rect" id="node11" href="#zensols.zotsite.domain.SortedWalker" target="_top" title="SortedWalker" alt="" coords="462,152,562,177"/>
+<area shape="rect" id="node13" href="#zensols.zotsite.domain.UnsortedWalker" target="_top" title="UnsortedWalker" alt="" coords="587,152,701,177"/>
+</map><span class="target" id="module-zensols.zotsite.domain"></span><dl class="py class">
+<dt id="zensols.zotsite.domain.Collection">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.domain.</code><code class="sig-name descname">Collection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sel</span></em>, <em class="sig-param"><span class="n">items</span></em>, <em class="sig-param"><span class="n">collections</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Collection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Collection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.domain.Container" title="zensols.zotsite.domain.Container"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.domain.Container</span></code></a></p>
+<p>Represents a (sub)collection, which is a container for other collections and
+items.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Collection.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sel</span></em>, <em class="sig-param"><span class="n">items</span></em>, <em class="sig-param"><span class="n">collections</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Collection.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Collection.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Collection.get_id">
+<code class="sig-name descname">get_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Collection.get_id"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Collection.get_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Collection.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#zensols.zotsite.domain.Collection.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.domain.Container">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.domain.</code><code class="sig-name descname">Container</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">items</span></em>, <em class="sig-param"><span class="n">collections</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Container"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Container" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.domain.ZoteroObject" title="zensols.zotsite.domain.ZoteroObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.domain.ZoteroObject</span></code></a></p>
+<p>Container class holds items and sub-collections.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Container.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">items</span></em>, <em class="sig-param"><span class="n">collections</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Container.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Container.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Container.children">
+<em class="property">property </em><code class="sig-name descname">children</code><a class="headerlink" href="#zensols.zotsite.domain.Container.children" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.domain.Item">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.domain.</code><code class="sig-name descname">Item</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sel</span></em>, <em class="sig-param"><span class="n">children</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Item"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.domain.ZoteroObject" title="zensols.zotsite.domain.ZoteroObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.domain.ZoteroObject</span></code></a></p>
+<p>Represents an attachement object, like PDFs, site links etc.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Item.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sel</span></em>, <em class="sig-param"><span class="n">children</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Item.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Item.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Item.creators">
+<em class="property">property </em><code class="sig-name descname">creators</code><a class="headerlink" href="#zensols.zotsite.domain.Item.creators" title="Permalink to this definition">¶</a></dt>
+<dd><p>(&lt;class ‘list’&gt;, &lt;class ‘zensols.zotsite.domain.Name’&gt;)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>rtype</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Item.get_db_id">
+<code class="sig-name descname">get_db_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Item.get_db_id"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Item.get_db_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Item.get_id">
+<code class="sig-name descname">get_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Item.get_id"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Item.get_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Item.metadata">
+<em class="property">property </em><code class="sig-name descname">metadata</code><a class="headerlink" href="#zensols.zotsite.domain.Item.metadata" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Item.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#zensols.zotsite.domain.Item.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Item.path">
+<em class="property">property </em><code class="sig-name descname">path</code><a class="headerlink" href="#zensols.zotsite.domain.Item.path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Item.set_id">
+<code class="sig-name descname">set_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Item.set_id"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Item.set_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.domain.Library">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.domain.</code><code class="sig-name descname">Library</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_dir</span></em>, <em class="sig-param"><span class="n">library_id</span></em>, <em class="sig-param"><span class="n">collections</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Library"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Library" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.domain.Container" title="zensols.zotsite.domain.Container"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.domain.Container</span></code></a></p>
+<p>Represents the top level object that contains the root level collections.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Library.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_dir</span></em>, <em class="sig-param"><span class="n">library_id</span></em>, <em class="sig-param"><span class="n">collections</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Library.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Library.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Library.attachment_resource">
+<code class="sig-name descname">attachment_resource</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Library.attachment_resource"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Library.attachment_resource" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Library.get_id">
+<code class="sig-name descname">get_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Library.get_id"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Library.get_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Library.get_storage_path">
+<code class="sig-name descname">get_storage_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fname</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Library.get_storage_path"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Library.get_storage_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Library.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#zensols.zotsite.domain.Library.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Library.title">
+<em class="property">property </em><code class="sig-name descname">title</code><a class="headerlink" href="#zensols.zotsite.domain.Library.title" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.domain.Name">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.domain.</code><code class="sig-name descname">Name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">first</span></em>, <em class="sig-param"><span class="n">last</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Name.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">first</span></em>, <em class="sig-param"><span class="n">last</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Name.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Name.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.domain.Note">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.domain.</code><code class="sig-name descname">Note</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sel</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Note"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Note" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.domain.ZoteroObject" title="zensols.zotsite.domain.ZoteroObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.domain.ZoteroObject</span></code></a></p>
+<p>Represents a note Zotero data object.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Note.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sel</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Note.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Note.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Note.get_id">
+<code class="sig-name descname">get_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Note.get_id"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Note.get_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Note.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#zensols.zotsite.domain.Note.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Note.title">
+<em class="property">property </em><code class="sig-name descname">title</code><a class="headerlink" href="#zensols.zotsite.domain.Note.title" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.domain.PrintVisitor">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.domain.</code><code class="sig-name descname">PrintVisitor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">writer</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#PrintVisitor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.PrintVisitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.domain.Visitor" title="zensols.zotsite.domain.Visitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.domain.Visitor</span></code></a></p>
+<dl class="py method">
+<dt id="zensols.zotsite.domain.PrintVisitor.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">writer</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#PrintVisitor.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.PrintVisitor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.PrintVisitor.enter_parent">
+<code class="sig-name descname">enter_parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#PrintVisitor.enter_parent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.PrintVisitor.enter_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for traversing down/into a node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.PrintVisitor.leave_parent">
+<code class="sig-name descname">leave_parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#PrintVisitor.leave_parent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.PrintVisitor.leave_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for traversing up/out of a node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.PrintVisitor.visit_child">
+<code class="sig-name descname">visit_child</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">child</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#PrintVisitor.visit_child"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.PrintVisitor.visit_child" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for visiting a node.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.domain.SortedWalker">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.domain.</code><code class="sig-name descname">SortedWalker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key_fn</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reverse</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#SortedWalker"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.SortedWalker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.domain.Walker" title="zensols.zotsite.domain.Walker"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.domain.Walker</span></code></a></p>
+<dl class="py method">
+<dt id="zensols.zotsite.domain.SortedWalker.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key_fn</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reverse</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#SortedWalker.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.SortedWalker.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.SortedWalker.walk">
+<code class="sig-name descname">walk</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">visitor</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#SortedWalker.walk"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.SortedWalker.walk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recursively traverse the object graph.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.domain.UnsortedWalker">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.domain.</code><code class="sig-name descname">UnsortedWalker</code><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#UnsortedWalker"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.UnsortedWalker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.domain.Walker" title="zensols.zotsite.domain.Walker"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.domain.Walker</span></code></a></p>
+<dl class="py method">
+<dt id="zensols.zotsite.domain.UnsortedWalker.walk">
+<code class="sig-name descname">walk</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">visitor</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#UnsortedWalker.walk"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.UnsortedWalker.walk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recursively traverse the object graph.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.domain.Visitor">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.domain.</code><code class="sig-name descname">Visitor</code><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Visitor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Visitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></a></p>
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Visitor.enter_parent">
+<em class="property">abstract </em><code class="sig-name descname">enter_parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Visitor.enter_parent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Visitor.enter_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for traversing down/into a node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Visitor.leave_parent">
+<em class="property">abstract </em><code class="sig-name descname">leave_parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Visitor.leave_parent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Visitor.leave_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for traversing up/out of a node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Visitor.visit_child">
+<em class="property">abstract </em><code class="sig-name descname">visit_child</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">child</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Visitor.visit_child"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Visitor.visit_child" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for visiting a node.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.domain.Walker">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.domain.</code><code class="sig-name descname">Walker</code><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Walker"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Walker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></a></p>
+<dl class="py method">
+<dt id="zensols.zotsite.domain.Walker.walk">
+<em class="property">abstract </em><code class="sig-name descname">walk</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">visitor</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#Walker.walk"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.Walker.walk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recursively traverse the object graph.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.domain.ZoteroObject">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.domain.</code><code class="sig-name descname">ZoteroObject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">children</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#ZoteroObject"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.ZoteroObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></a></p>
+<p>Represents any collection, item etc. Zotero data object.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.domain.ZoteroObject.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">children</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#ZoteroObject.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.ZoteroObject.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.ZoteroObject.children">
+<em class="property">property </em><code class="sig-name descname">children</code><a class="headerlink" href="#zensols.zotsite.domain.ZoteroObject.children" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.ZoteroObject.get_id">
+<em class="property">abstract </em><code class="sig-name descname">get_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#ZoteroObject.get_id"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.ZoteroObject.get_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.ZoteroObject.id">
+<em class="property">property </em><code class="sig-name descname">id</code><a class="headerlink" href="#zensols.zotsite.domain.ZoteroObject.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.ZoteroObject.note">
+<em class="property">property </em><code class="sig-name descname">note</code><a class="headerlink" href="#zensols.zotsite.domain.ZoteroObject.note" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.ZoteroObject.short_title">
+<code class="sig-name descname">short_title</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">str_len</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/domain.html#ZoteroObject.short_title"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.domain.ZoteroObject.short_title" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the short name of this object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.ZoteroObject.title">
+<em class="property">property </em><code class="sig-name descname">title</code><a class="headerlink" href="#zensols.zotsite.domain.ZoteroObject.title" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.domain.ZoteroObject.type">
+<em class="property">property </em><code class="sig-name descname">type</code><a class="headerlink" href="#zensols.zotsite.domain.ZoteroObject.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the type this item is.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="zensols-zotsite-fscpvisitor">
+<h2>zensols.zotsite.fscpvisitor<a class="headerlink" href="#zensols-zotsite-fscpvisitor" title="Permalink to this headline">¶</a></h2>
+<div class="graphviz"><img src="../_images/inheritance-96ac21d65c39e5a7d24a576801d85ef6dce99acc.png" alt="Inheritance diagram of zensols.zotsite.fscpvisitor" usemap="#inheritancec45b071727" class="inheritance graphviz" /></div>
+<map id="inheritancec45b071727" name="inheritancec45b071727">
+<area shape="rect" id="node3" href="#zensols.zotsite.domain.Visitor" target="_top" title="Visitor" alt="" coords="47,79,119,104"/>
+<area shape="rect" id="node2" href="#zensols.zotsite.fscpvisitor.FileSystemCopyVisitor" target="_top" title="This class copies all Item objects to their destination." alt="" coords="5,152,161,177"/>
+</map><span class="target" id="module-zensols.zotsite.fscpvisitor"></span><dl class="py class">
+<dt id="zensols.zotsite.fscpvisitor.FileSystemCopyVisitor">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.fscpvisitor.</code><code class="sig-name descname">FileSystemCopyVisitor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lib</span></em>, <em class="sig-param"><span class="n">out_dir</span></em>, <em class="sig-param"><span class="n">itemmapper</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/fscpvisitor.html#FileSystemCopyVisitor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.fscpvisitor.FileSystemCopyVisitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.domain.Visitor" title="zensols.zotsite.domain.Visitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.domain.Visitor</span></code></a></p>
+<p>This class copies all Item objects to their destination.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.fscpvisitor.FileSystemCopyVisitor.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lib</span></em>, <em class="sig-param"><span class="n">out_dir</span></em>, <em class="sig-param"><span class="n">itemmapper</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/fscpvisitor.html#FileSystemCopyVisitor.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.fscpvisitor.FileSystemCopyVisitor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the visitor object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lib</strong> – the object graph returned from
+<code class="docutils literal notranslate"><span class="pre">DatabaseReader.get_library</span></code>.</p></li>
+<li><p><strong>out_dir</strong> – the target directory to copy data</p></li>
+<li><p><strong>itemmapper</strong> (<a class="reference internal" href="#zensols.zotsite.itemmap.ItemMapper" title="zensols.zotsite.itemmap.ItemMapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">ItemMapper</span></code></a>) – used for file name substitution so the widget uses
+the correct names (i.e. underscore substitution)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.fscpvisitor.FileSystemCopyVisitor.enter_parent">
+<code class="sig-name descname">enter_parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/fscpvisitor.html#FileSystemCopyVisitor.enter_parent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.fscpvisitor.FileSystemCopyVisitor.enter_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for traversing down/into a node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.fscpvisitor.FileSystemCopyVisitor.leave_parent">
+<code class="sig-name descname">leave_parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/fscpvisitor.html#FileSystemCopyVisitor.leave_parent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.fscpvisitor.FileSystemCopyVisitor.leave_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for traversing up/out of a node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.fscpvisitor.FileSystemCopyVisitor.visit_child">
+<code class="sig-name descname">visit_child</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">child</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/fscpvisitor.html#FileSystemCopyVisitor.visit_child"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.fscpvisitor.FileSystemCopyVisitor.visit_child" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for visiting a node.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="zensols-zotsite-itemmap">
+<h2>zensols.zotsite.itemmap<a class="headerlink" href="#zensols-zotsite-itemmap" title="Permalink to this headline">¶</a></h2>
+<div class="graphviz"><img src="../_images/inheritance-0a806099ebc76a351104f7e89d39d183fad62f56.png" alt="Inheritance diagram of zensols.zotsite.itemmap" usemap="#inheritance4b9b9b2915" class="inheritance graphviz" /></div>
+<map id="inheritance4b9b9b2915" name="inheritance4b9b9b2915">
+<area shape="rect" id="node3" href="#zensols.zotsite.itemmap.ItemMapper" target="_top" title="ItemMapper" alt="" coords="81,79,171,104"/>
+<area shape="rect" id="node2" href="#zensols.zotsite.itemmap.IdItemMapper" target="_top" title="Map by using ids." alt="" coords="5,152,108,177"/>
+<area shape="rect" id="node4" href="#zensols.zotsite.itemmap.RegexItemMapper" target="_top" title="Map by using regular expression replacements." alt="" coords="132,152,261,177"/>
+</map><span class="target" id="module-zensols.zotsite.itemmap"></span><dl class="py class">
+<dt id="zensols.zotsite.itemmap.IdItemMapper">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.itemmap.</code><code class="sig-name descname">IdItemMapper</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lib</span></em>, <em class="sig-param"><span class="n">fmatch_re</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">repl_re</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/itemmap.html#IdItemMapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.itemmap.IdItemMapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.itemmap.ItemMapper" title="zensols.zotsite.itemmap.ItemMapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.itemmap.ItemMapper</span></code></a></p>
+<p>Map by using ids.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.itemmap.IdItemMapper.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lib</span></em>, <em class="sig-param"><span class="n">fmatch_re</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">repl_re</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/itemmap.html#IdItemMapper.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.itemmap.IdItemMapper.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.itemmap.IdItemMapper.get_file_name">
+<code class="sig-name descname">get_file_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/itemmap.html#IdItemMapper.get_file_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.itemmap.IdItemMapper.get_file_name" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.itemmap.IdItemMapper.get_resource_name">
+<code class="sig-name descname">get_resource_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/itemmap.html#IdItemMapper.get_resource_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.itemmap.IdItemMapper.get_resource_name" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.itemmap.ItemMapper">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.itemmap.</code><code class="sig-name descname">ItemMapper</code><a class="reference internal" href="../_modules/zensols/zotsite/itemmap.html#ItemMapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.itemmap.ItemMapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></a></p>
+<dl class="py attribute">
+<dt id="zensols.zotsite.itemmap.ItemMapper.EXT_RE">
+<code class="sig-name descname">EXT_RE</code><em class="property"> = re.compile('.+\\.(.+)?$')</em><a class="headerlink" href="#zensols.zotsite.itemmap.ItemMapper.EXT_RE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.itemmap.ItemMapper.get_file_name">
+<em class="property">abstract </em><code class="sig-name descname">get_file_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/itemmap.html#ItemMapper.get_file_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.itemmap.ItemMapper.get_file_name" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.itemmap.ItemMapper.get_resource_name">
+<em class="property">abstract </em><code class="sig-name descname">get_resource_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/itemmap.html#ItemMapper.get_resource_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.itemmap.ItemMapper.get_resource_name" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="zensols.zotsite.itemmap.RegexItemMapper">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.itemmap.</code><code class="sig-name descname">RegexItemMapper</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lib</span></em>, <em class="sig-param"><span class="n">fmatch_re</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">repl_re</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/itemmap.html#RegexItemMapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.itemmap.RegexItemMapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.itemmap.ItemMapper" title="zensols.zotsite.itemmap.ItemMapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.itemmap.ItemMapper</span></code></a></p>
+<p>Map by using regular expression replacements.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.itemmap.RegexItemMapper.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lib</span></em>, <em class="sig-param"><span class="n">fmatch_re</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">repl_re</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/itemmap.html#RegexItemMapper.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.itemmap.RegexItemMapper.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.itemmap.RegexItemMapper.get_file_name">
+<code class="sig-name descname">get_file_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/itemmap.html#RegexItemMapper.get_file_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.itemmap.RegexItemMapper.get_file_name" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.itemmap.RegexItemMapper.get_resource_name">
+<code class="sig-name descname">get_resource_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/itemmap.html#RegexItemMapper.get_resource_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.itemmap.RegexItemMapper.get_resource_name" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="zensols-zotsite-navvisitor">
+<h2>zensols.zotsite.navvisitor<a class="headerlink" href="#zensols-zotsite-navvisitor" title="Permalink to this headline">¶</a></h2>
+<div class="graphviz"><img src="../_images/inheritance-ea3a2a9007cffa0b14d6e0048267a9b6d45463ed.png" alt="Inheritance diagram of zensols.zotsite.navvisitor" usemap="#inheritancee40b84ba70" class="inheritance graphviz" /></div>
+<map id="inheritancee40b84ba70" name="inheritancee40b84ba70">
+<area shape="rect" id="node3" href="#zensols.zotsite.domain.Visitor" target="_top" title="Visitor" alt="" coords="31,79,103,104"/>
+<area shape="rect" id="node2" href="#zensols.zotsite.navvisitor.NavCreateVisitor" target="_top" title="This class creates the data structure used by the Javascript navigation" alt="" coords="5,152,128,177"/>
+</map><span class="target" id="module-zensols.zotsite.navvisitor"></span><dl class="py class">
+<dt id="zensols.zotsite.navvisitor.NavCreateVisitor">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.navvisitor.</code><code class="sig-name descname">NavCreateVisitor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lib</span></em>, <em class="sig-param"><span class="n">itemmapper</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/navvisitor.html#NavCreateVisitor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.navvisitor.NavCreateVisitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.domain.Visitor" title="zensols.zotsite.domain.Visitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.domain.Visitor</span></code></a></p>
+<p>This class creates the data structure used by the Javascript navigation
+widget in the created website.</p>
+<dl class="py attribute">
+<dt id="zensols.zotsite.navvisitor.NavCreateVisitor.CAPS_META_KEYS">
+<code class="sig-name descname">CAPS_META_KEYS</code><em class="property"> = {'url'}</em><a class="headerlink" href="#zensols.zotsite.navvisitor.NavCreateVisitor.CAPS_META_KEYS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="zensols.zotsite.navvisitor.NavCreateVisitor.ITEM_ICONS">
+<code class="sig-name descname">ITEM_ICONS</code><em class="property"> = {'attachment': 'paperclip', 'blogPost': 'pencil', 'book': 'book', 'bookSection': 'book', 'computerProgram': 'floppy-disk', 'conferencePaper': 'pencil', 'journalArticle': 'file', 'patent': 'certificate', 'report': 'font', 'thesis': 'education', 'webpage': 'bookmark'}</em><a class="headerlink" href="#zensols.zotsite.navvisitor.NavCreateVisitor.ITEM_ICONS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="zensols.zotsite.navvisitor.NavCreateVisitor.PDF_EXT_REGEXP">
+<code class="sig-name descname">PDF_EXT_REGEXP</code><em class="property"> = re.compile('.*\\.pdf$')</em><a class="headerlink" href="#zensols.zotsite.navvisitor.NavCreateVisitor.PDF_EXT_REGEXP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="zensols.zotsite.navvisitor.NavCreateVisitor.PDF_FULL_REGEXP">
+<code class="sig-name descname">PDF_FULL_REGEXP</code><em class="property"> = re.compile('^.*Full\\s*[tT]ext PDF')</em><a class="headerlink" href="#zensols.zotsite.navvisitor.NavCreateVisitor.PDF_FULL_REGEXP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="zensols.zotsite.navvisitor.NavCreateVisitor.UPPER">
+<code class="sig-name descname">UPPER</code><em class="property"> = re.compile('([A-Z][a-z]+)')</em><a class="headerlink" href="#zensols.zotsite.navvisitor.NavCreateVisitor.UPPER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.navvisitor.NavCreateVisitor.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lib</span></em>, <em class="sig-param"><span class="n">itemmapper</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/navvisitor.html#NavCreateVisitor.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.navvisitor.NavCreateVisitor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the visitor object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>lib</strong> – the object graph returned from</p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">DatabaseReader.get_library</span></code>.
+:type itemmapper: <a class="reference internal" href="#zensols.zotsite.itemmap.ItemMapper" title="zensols.zotsite.itemmap.ItemMapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">ItemMapper</span></code></a>
+:param itemmapper: used for file name substitution so the widget uses the
+correct names (i.e. underscore substitution)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.navvisitor.NavCreateVisitor.create_node">
+<code class="sig-name descname">create_node</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/navvisitor.html#NavCreateVisitor.create_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.navvisitor.NavCreateVisitor.create_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a node for an item.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.navvisitor.NavCreateVisitor.enter_parent">
+<code class="sig-name descname">enter_parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/navvisitor.html#NavCreateVisitor.enter_parent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.navvisitor.NavCreateVisitor.enter_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for traversing down/into a node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.navvisitor.NavCreateVisitor.icon_name">
+<code class="sig-name descname">icon_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/navvisitor.html#NavCreateVisitor.icon_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.navvisitor.NavCreateVisitor.icon_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the name of the icon name for <code class="docutils literal notranslate"><span class="pre">node</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.navvisitor.NavCreateVisitor.leave_parent">
+<code class="sig-name descname">leave_parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/navvisitor.html#NavCreateVisitor.leave_parent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.navvisitor.NavCreateVisitor.leave_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for traversing up/out of a node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.navvisitor.NavCreateVisitor.primary_roots">
+<em class="property">property </em><code class="sig-name descname">primary_roots</code><a class="headerlink" href="#zensols.zotsite.navvisitor.NavCreateVisitor.primary_roots" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the (root level) collections.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.navvisitor.NavCreateVisitor.visit_child">
+<code class="sig-name descname">visit_child</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">child</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/navvisitor.html#NavCreateVisitor.visit_child"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.navvisitor.NavCreateVisitor.visit_child" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for visiting a node.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="zensols-zotsite-prunevisitor">
+<h2>zensols.zotsite.prunevisitor<a class="headerlink" href="#zensols-zotsite-prunevisitor" title="Permalink to this headline">¶</a></h2>
+<div class="graphviz"><img src="../_images/inheritance-89d6163e41c54dfa2c89eaa43e6c8ab828789552.png" alt="Inheritance diagram of zensols.zotsite.prunevisitor" usemap="#inheritancee065519097" class="inheritance graphviz" /></div>
+<map id="inheritancee065519097" name="inheritancee065519097">
+<area shape="rect" id="node3" href="#zensols.zotsite.domain.Visitor" target="_top" title="Visitor" alt="" coords="16,79,88,104"/>
+<area shape="rect" id="node2" href="#zensols.zotsite.prunevisitor.PruneVisitor" target="_top" title="This that filters out ``Collection`` instances based on a regular" alt="" coords="5,152,99,177"/>
+</map><span class="target" id="module-zensols.zotsite.prunevisitor"></span><dl class="py class">
+<dt id="zensols.zotsite.prunevisitor.PruneVisitor">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.prunevisitor.</code><code class="sig-name descname">PruneVisitor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name_pat</span></em>, <em class="sig-param"><span class="n">match_children</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/prunevisitor.html#PruneVisitor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.prunevisitor.PruneVisitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zensols.zotsite.domain.Visitor" title="zensols.zotsite.domain.Visitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">zensols.zotsite.domain.Visitor</span></code></a></p>
+<p>This that filters out <code class="docutils literal notranslate"><span class="pre">Collection</span></code> instances based on a regular
+expression.  Optionally, <code class="docutils literal notranslate"><span class="pre">Item</span></code> level nodes are <em>included</em> if based on
+<code class="docutils literal notranslate"><span class="pre">match_children</span></code>.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.prunevisitor.PruneVisitor.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name_pat</span></em>, <em class="sig-param"><span class="n">match_children</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/prunevisitor.html#PruneVisitor.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.prunevisitor.PruneVisitor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the visitor object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name_pat</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – a regular expression used to filter nodes</p></li>
+<li><p><strong>match_children</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – if <code class="docutils literal notranslate"><span class="pre">True</span></code>, then also match <code class="docutils literal notranslate"><span class="pre">Item</span></code> level
+nodes</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.prunevisitor.PruneVisitor.enter_parent">
+<code class="sig-name descname">enter_parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/prunevisitor.html#PruneVisitor.enter_parent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.prunevisitor.PruneVisitor.enter_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for traversing down/into a node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.prunevisitor.PruneVisitor.leave_parent">
+<code class="sig-name descname">leave_parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/prunevisitor.html#PruneVisitor.leave_parent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.prunevisitor.PruneVisitor.leave_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for traversing up/out of a node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.prunevisitor.PruneVisitor.visit_child">
+<code class="sig-name descname">visit_child</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">child</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/prunevisitor.html#PruneVisitor.visit_child"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.prunevisitor.PruneVisitor.visit_child" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for visiting a node.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="zensols-zotsite-site">
+<h2>zensols.zotsite.site<a class="headerlink" href="#zensols-zotsite-site" title="Permalink to this headline">¶</a></h2>
+<div class="graphviz"><img src="../_images/inheritance-266567d423f710d9d01d901653b18b06fd63edc6.png" alt="Inheritance diagram of zensols.zotsite.site" usemap="#inheritance9428df31ab" class="inheritance graphviz" /></div>
+<map id="inheritance9428df31ab" name="inheritance9428df31ab">
+<area shape="rect" id="node1" href="#zensols.zotsite.site.SiteCreator" target="_top" title="Create the Zotero content web site." alt="" coords="5,5,93,31"/>
+</map><span class="target" id="module-zensols.zotsite.site"></span><dl class="py class">
+<dt id="zensols.zotsite.site.SiteCreator">
+<em class="property">class </em><code class="sig-prename descclassname">zensols.zotsite.site.</code><code class="sig-name descname">SiteCreator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/site.html#SiteCreator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.site.SiteCreator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Create the Zotero content web site.</p>
+<dl class="py method">
+<dt id="zensols.zotsite.site.SiteCreator.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/site.html#SiteCreator.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.site.SiteCreator.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.site.SiteCreator.export">
+<code class="sig-name descname">export</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/site.html#SiteCreator.export"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.site.SiteCreator.export" title="Permalink to this definition">¶</a></dt>
+<dd><p>Entry point method to export (create) the website.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.site.SiteCreator.itemmapper">
+<em class="property">property </em><code class="sig-name descname">itemmapper</code><a class="headerlink" href="#zensols.zotsite.site.SiteCreator.itemmapper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.site.SiteCreator.library">
+<em class="property">property </em><code class="sig-name descname">library</code><a class="headerlink" href="#zensols.zotsite.site.SiteCreator.library" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#zensols.zotsite.domain.Library" title="zensols.zotsite.domain.Library"><code class="xref py py-class docutils literal notranslate"><span class="pre">Library</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>rtype</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.site.SiteCreator.print_structure">
+<code class="sig-name descname">print_structure</code><span class="sig-paren">(</span><em class="sig-param">writer=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='utf-8'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/site.html#SiteCreator.print_structure"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.site.SiteCreator.print_structure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print (sub)collections and papers in those collections as a tree.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.site.SiteCreator.tmp">
+<code class="sig-name descname">tmp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/zensols/zotsite/site.html#SiteCreator.tmp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#zensols.zotsite.site.SiteCreator.tmp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="zensols.zotsite.site.SiteCreator.walker">
+<em class="property">property </em><code class="sig-name descname">walker</code><a class="headerlink" href="#zensols.zotsite.site.SiteCreator.walker" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#zensols.zotsite.domain.Walker" title="zensols.zotsite.domain.Walker"><code class="xref py py-class docutils literal notranslate"><span class="pre">Walker</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>rtype</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-zensols.zotsite">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-zensols.zotsite" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../CONTRIBUTING.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../api.html" class="btn btn-neutral float-left" title="API Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Paul Landes.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

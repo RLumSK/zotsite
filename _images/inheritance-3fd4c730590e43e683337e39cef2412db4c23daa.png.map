@@ -1,0 +1,15 @@
+<map id="inheritancefd4cc1da5c" name="inheritancefd4cc1da5c">
+<area shape="rect" id="node1" title="Helper class that provides a standard way to create an ABC using" alt="" coords="359,5,431,31"/>
+<area shape="rect" id="node4" href="#zensols.zotsite.domain.ZoteroObject" target="_top" title="Represents any collection, item etc. Zotero data object." alt="" coords="191,79,289,104"/>
+<area shape="rect" id="node10" href="#zensols.zotsite.domain.Visitor" target="_top" title="Visitor" alt="" coords="359,79,431,104"/>
+<area shape="rect" id="node12" href="#zensols.zotsite.domain.Walker" target="_top" title="Walker" alt="" coords="476,79,548,104"/>
+<area shape="rect" id="node2" href="#zensols.zotsite.domain.Collection" target="_top" title="Represents a (sub)collection, which is a container for other collections and" alt="" coords="5,225,85,251"/>
+<area shape="rect" id="node3" href="#zensols.zotsite.domain.Container" target="_top" title="Container class holds items and sub&#45;collections." alt="" coords="55,152,134,177"/>
+<area shape="rect" id="node6" href="#zensols.zotsite.domain.Library" target="_top" title="Represents the top level object that contains the root level collections." alt="" coords="109,225,181,251"/>
+<area shape="rect" id="node5" href="#zensols.zotsite.domain.Item" target="_top" title="Represents an attachement object, like PDFs, site links etc." alt="" coords="159,152,231,177"/>
+<area shape="rect" id="node8" href="#zensols.zotsite.domain.Note" target="_top" title="Represents a note Zotero data object." alt="" coords="255,152,327,177"/>
+<area shape="rect" id="node7" href="#zensols.zotsite.domain.Name" target="_top" title="Name" alt="" coords="455,5,527,31"/>
+<area shape="rect" id="node9" href="#zensols.zotsite.domain.PrintVisitor" target="_top" title="PrintVisitor" alt="" coords="351,152,438,177"/>
+<area shape="rect" id="node11" href="#zensols.zotsite.domain.SortedWalker" target="_top" title="SortedWalker" alt="" coords="462,152,562,177"/>
+<area shape="rect" id="node13" href="#zensols.zotsite.domain.UnsortedWalker" target="_top" title="UnsortedWalker" alt="" coords="587,152,701,177"/>
+</map>

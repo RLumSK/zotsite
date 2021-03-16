@@ -1,0 +1,7 @@
+<map id="inheritance4bd244d0cb" name="inheritance4bd244d0cb">
+<area shape="rect" id="node1" href="#zensols.zotsite.cli.ConfAppCommandLine" target="_top" title="ConfAppCommandLine" alt="" coords="34,299,191,324"/>
+<area shape="rect" id="node2" title="A command line option parser that first parses an ini file and passes that" alt="" coords="5,225,220,251"/>
+<area shape="rect" id="node3" title="Convenience action handler that allows a definition on a per action" alt="" coords="17,152,209,177"/>
+<area shape="rect" id="node5" title="A simple action based command line interface." alt="" coords="55,5,170,31"/>
+<area shape="rect" id="node6" href="#zensols.zotsite.cli.SiteCli" target="_top" title="SiteCli" alt="" coords="194,5,266,31"/>
+</map>

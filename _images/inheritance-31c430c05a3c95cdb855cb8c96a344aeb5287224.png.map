@@ -1,0 +1,6 @@
+<map id="inheritance99ba1d07d8" name="inheritance99ba1d07d8">
+<area shape="rect" id="node1" title="Helper class that provides a standard way to create an ABC using" alt="" coords="35,5,107,31"/>
+<area shape="rect" id="node4" href="#zensols.zotsite.domain.Visitor" target="_top" title="Visitor" alt="" coords="35,79,107,104"/>
+<area shape="rect" id="node2" href="#zensols.zotsite.betterbib.BetterBibtexMapper" target="_top" title="Read the BetterBibtex database and create a mapping from item DB ids to" alt="" coords="131,5,269,31"/>
+<area shape="rect" id="node3" href="#zensols.zotsite.betterbib.BetterBibtexVisitor" target="_top" title="Use the ``BetterBibtexMapper`` to change the keys in mapped items to the" alt="" coords="5,152,136,177"/>
+</map>

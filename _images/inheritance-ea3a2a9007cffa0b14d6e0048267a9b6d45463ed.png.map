@@ -1,0 +1,5 @@
+<map id="inheritancee40b84ba70" name="inheritancee40b84ba70">
+<area shape="rect" id="node1" title="Helper class that provides a standard way to create an ABC using" alt="" coords="31,5,103,31"/>
+<area shape="rect" id="node3" href="#zensols.zotsite.domain.Visitor" target="_top" title="Visitor" alt="" coords="31,79,103,104"/>
+<area shape="rect" id="node2" href="#zensols.zotsite.navvisitor.NavCreateVisitor" target="_top" title="This class creates the data structure used by the Javascript navigation" alt="" coords="5,152,128,177"/>
+</map>
